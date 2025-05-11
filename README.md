@@ -57,3 +57,10 @@ mutation {
     DocumentDateExpedition: "2025-05-01"
   )
 }
+
+## Instalación
+
+Para instalar las dependencias de Composer en este proyecto, solo necesitas ejecutar:
+
+```bash
+composer install
