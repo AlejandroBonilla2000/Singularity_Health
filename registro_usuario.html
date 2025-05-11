@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+    <!-- Vinculamos Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <!-- Vinculamos jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .form-container {
+        max-width: 800px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin: auto; /* Centrado */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="text-center mb-4">Formulario de Registro de Usuario</h2>
+      <form id="registrationForm">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="LastName" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="LastName"
+              name="LastName"
+              required />
+          </div>
+          <div class="col-md-6">
+            <label for="Name" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Name"
+              name="Name"
+              required />
+          </div>
+
+          <div class="col-md-6">
+            <label for="username" class="form-label">Nombre de Usuario</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              name="username"
+              required />
+          </div>
+          <div class="col-md-6">
+            <label for="password" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              required />
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required />
+          </div>
+          <div class="col-md-6">
+            <label for="Document" class="form-label">Número de Documento</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Document"
+              name="Document"
+              required />
+          </div>
+
+          <div class="col-md-6">
+            <label for="TypeDocumentID" class="form-label"
+              >Tipo de Documento</label
+            >
+            <select
+              class="form-select"
+              id="TypeDocumentID"
+              name="TypeDocumentID"
+              required>
+              <option value="1">Cédula</option>
+              <option value="2">Pasaporte</option>
+              <option value="3">RUT</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="CountryID" class="form-label">País</label>
+            <select
+              class="form-select"
+              id="CountryID"
+              name="CountryID"
+              required>
+              <option value="1">United States</option>
+              <option value="2">Colombia</option>
+              <option value="3">Mexico</option>
+              <option value="4">Argentina</option>
+              <option value="5">Brazil</option>
+              <option value="6">Chile</option>
+              <option value="7">Peru</option>
+              <option value="8">Venezuela</option>
+              <option value="9">Panama</option>
+              <option value="10">Ecuador</option>
+              <option value="11">Costa Rica</option>
+              <option value="12">Spain</option>
+              <option value="13">France</option>
+              <option value="14">Germany</option>
+              <option value="15">Italy</option>
+              <option value="16">Japan</option>
+              <option value="17">China</option>
+              <option value="18">India</option>
+              <option value="19">Russia</option>
+              <option value="20">Canada</option>
+              <option value="21">Australia</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="Phone" class="form-label">Teléfono</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="Phone"
+              name="Phone"
+              required />
+          </div>
+          <div class="col-md-6">
+            <label for="City" class="form-label">Ciudad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="City"
+              name="City"
+              required />
+          </div>
+
+          <div class="col-md-6">
+            <label for="CelPhone" class="form-label">Teléfono Celular</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="CelPhone"
+              name="CelPhone"
+              required />
+          </div>
+          <div class="col-md-6">
+            <label for="EmergencyName" class="form-label"
+              >Nombre de Emergencia</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="EmergencyName"
+              name="EmergencyName"
+              required />
+          </div>
+
+          <div class="col-md-6">
+            <label for="EmergencyPhone" class="form-label"
+              >Teléfono de Emergencia</label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="EmergencyPhone"
+              name="EmergencyPhone"
+              required />
+          </div>
+          <div class="col-md-6">
+            <label for="DocumentPlaceExpedition" class="form-label"
+              >Lugar de Expedición</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="DocumentPlaceExpedition"
+              name="DocumentPlaceExpedition"
+              required />
+          </div>
+
+          <div class="col-md-12">
+            <label for="Address" class="form-label">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Address"
+              name="Address"
+              required />
+          </div>
+
+          <div class="col-md-6">
+            <label for="DocumentDateExpedition" class="form-label"
+              >Fecha de Expedición</label
+            >
+            <input
+              type="date"
+              class="form-control"
+              id="DocumentDateExpedition"
+              name="DocumentDateExpedition"
+              required />
+          </div>
+        </div>
+
+        <div class="mt-4 text-center">
+          <button type="submit" class="btn btn-primary">
+            Registrar Usuario
+          </button>
+        </div>
+      </form>
+      <div id="errorMessages" class="mt-3"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#registrationForm").on("submit", function (e) {
+          e.preventDefault(); // Evita el envío tradicional del formulario
+          $("#errorMessages").empty(); // Limpiar mensajes de error previos
+          var formData = $(this).serializeArray();
+          var variables = {};
+          var errors = [];
+
+          // Recorremos los datos del formulario y validamos
+          formData.forEach(function (item) {
+            variables[item.name] = item.value;
+          });
+
+          // Validación de campos
+          if (!variables.LastName) {
+            errors.push("El campo 'Apellido' es obligatorio.");
+          }
+          if (!variables.Name) {
+            errors.push("El campo 'Nombre' es obligatorio.");
+          }
+          if (!variables.username) {
+            errors.push("El campo 'Nombre de Usuario' es obligatorio.");
+          }
+          if (!variables.password) {
+            errors.push("El campo 'Contraseña' es obligatorio.");
+          }
+          if (!variables.email) {
+            errors.push("El campo 'Correo Electrónico' es obligatorio.");
+          } else if (!/\S+@\S+\.\S+/.test(variables.email)) {
+            errors.push("El 'Correo Electrónico' no es válido.");
+          }
+          if (!variables.Document) {
+            errors.push("El campo 'Número de Documento' es obligatorio.");
+          }
+          if (!variables.TypeDocumentID) {
+            errors.push("El campo 'Tipo de Documento' es obligatorio.");
+          }
+          if (!variables.Address) {
+            errors.push("El campo 'Dirección' es obligatorio.");
+          }
+          if (!variables.CountryID) {
+            errors.push("El campo 'País' es obligatorio.");
+          }
+          if (!variables.Phone) {
+            errors.push("El campo 'Teléfono' es obligatorio.");
+          }
+          if (!variables.City) {
+            errors.push("El campo 'Ciudad' es obligatorio.");
+          }
+          if (!variables.CelPhone) {
+            errors.push("El campo 'Teléfono Celular' es obligatorio.");
+          }
+          if (!variables.EmergencyName) {
+            errors.push("El campo 'Nombre de Emergencia' es obligatorio.");
+          }
+          if (!variables.EmergencyPhone) {
+            errors.push("El campo 'Teléfono de Emergencia' es obligatorio.");
+          }
+          if (!variables.DocumentPlaceExpedition) {
+            errors.push(
+              "El campo 'Lugar de Expedición del Documento' es obligatorio."
+            );
+          }
+          if (!variables.DocumentDateExpedition) {
+            errors.push(
+              "El campo 'Fecha de Expedición del Documento' es obligatorio."
+            );
+          }
+
+          // Si hay errores, mostramos las alertas
+          if (errors.length > 0) {
+            var errorHtml = "<div class='alert alert-danger'><ul>";
+            errors.forEach(function (error) {
+              errorHtml += "<li>" + error + "</li>";
+            });
+            errorHtml += "</ul></div>";
+            $("#errorMessages").html(errorHtml);
+            return; // Detener el envío si hay errores
+          }
+
+          // Si todo está bien, realiza la consulta GraphQL
+          var query = `
+                mutation {
+                    registerUser(
+                        LastName: "${variables.LastName}",
+                        Name: "${variables.Name}",
+                        username: "${variables.username}",
+                        password: "${variables.password}",
+                        email: "${variables.email}",
+                        Document: "${variables.Document}",
+                        TypeDocumentID: ${variables.TypeDocumentID},
+                        Address: "${variables.Address}",
+                        CountryID: ${variables.CountryID},
+                        Phone: "${variables.Phone}",
+                        City: "${variables.City}",
+                        CelPhone: "${variables.CelPhone}",
+                        EmergencyName: "${variables.EmergencyName}",
+                        EmergencyPhone: "${variables.EmergencyPhone}",
+                        DocumentPlaceExpedition: "${variables.DocumentPlaceExpedition}",
+                        DocumentDateExpedition: "${variables.DocumentDateExpedition}"
+                    )
+                }
+            `;
+
+          // Realiza la solicitud AJAX
+          $.ajax({
+            url: "http://localhost:3000/server.php", // Endpoint de tu servidor
+            type: "POST",
+            contentType: "application/json", // Enviamos como JSON
+            data: JSON.stringify({ query: query }), // Enviamos la consulta como un JSON
+            success: function (response) {
+              // Verifica si la respuesta tiene errores y muestra el mensaje
+              if (response.errors && response.errors.length > 0) {
+                alert(response.errors[0].message); // Muestra el mensaje del primer error
+              } else {
+                alert("Usuario registrado correctamente");
+              }
+            },
+            error: function (xhr, status, error) {
+              alert(error); // Mostrar el error en consola
+              alert("Ocurrió un error al enviar el formulario");
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
